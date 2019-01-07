@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './PortfolioCarouselComponent.css';
+import './siteCarouselComponent.css';
 
-class PortfolioCarouselComponent extends Component {
+class SiteCarouselComponent extends Component {
   render() {
     return (
       <div className="row h-100 flex-grow">
@@ -21,4 +21,4 @@ class PortfolioCarouselComponent extends Component {
   }
 }
 
-export default PortfolioCarouselComponent;
+export default SiteCarouselComponent;

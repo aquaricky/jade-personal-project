@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import './portfolioArrowsComponent.css';
+import './siteArrowsComponent.css';
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 
-class PortfolioArrowsComponent extends Component {
+class SiteArrowsComponent extends Component {
+
   render() {
+    //const ArrowValue = this.props.ArrowValue;
+    let Arrow;
+
+    if (this.props.ArrowValue < 0) {
+      Arrow = <MaterialIcon icon="keyboard_arrow_left"/>
+    }else{
+      Arrow = <MaterialIcon icon="keyboard_arrow_right"/>
+    }
+
+
     return (
-      <div className="row h-100 flex-grow tests">
+      <div className="row h-100 flex-grow tests" onClick={() => this.props.onClick()}>
         {/*Add logic to descide if this is the left or the right arrow*/}
         <div className='col-12'>
           <div className='row spacings'></div>
@@ -15,8 +26,7 @@ class PortfolioArrowsComponent extends Component {
               <div className='row'></div>
 
               <div className='row'>
-                <MaterialIcon icon="keyboard_arrow_left" />
-                <MaterialIcon icon="keyboard_arrow_right" />
+                {Arrow}
               </div>
 
               <div className='row'></div>
@@ -30,4 +40,4 @@ class PortfolioArrowsComponent extends Component {
   }
 }
 
-export default PortfolioArrowsComponent;
+export default SiteArrowsComponent;
