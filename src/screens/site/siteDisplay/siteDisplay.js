@@ -1,76 +1,20 @@
 import React, { Component } from 'react';
 import './siteDisplay.css';
-import SiteCarouselComponent from '../../../components/site/siteCarousel/siteCarouselComponent';
-import SiteCenterPanelComponent from '../../../components/site/siteCenterPanel/siteCenterPanelComponent';
-import SiteArrowsComponent from '../../../components/site/siteArrows/siteArrowsComponent';
+import AboutDisplayComponent from '../../about_me/about';
+import ResumeDisplayComponent from '../../resume/resume';
 
 class SiteDisplayComponent extends Component {
-constructor(props){
-  super(props);
-  this.state={
-    screens: [<div>test</div>,<div>test2</div>,null,null,null],
-    currentDisplay: 0,
-    leftArrow: -1,
-    rightArrow: 1
-  };
-}
-
   render() {
+    var test =[<ResumeDisplayComponent></ResumeDisplayComponent>,<AboutDisplayComponent></AboutDisplayComponent>]
 
-    function checkDisplayedValue(value, currentDisplay){
-      if((value < 0)&(currentDisplay <= 0)){
-        alert("cannot change this value")
-        return(currentDisplay);
-      }else{
-        currentDisplay= currentDisplay + value;
-        alert(currentDisplay);
-
-        return (currentDisplay);
-      }
-    }
-
-    function handleArrowDisplayValueChange(value){
-      if((value < 0) & (this.state.currentDisplay <= 0)){
-        alert("cannot change this value " + this.state.currentDisplay)
-
-      }else if((value > 0) & (this.state.currentDisplay > this.state.screens.length)){
-        alert("value out of range " + this.state.currentDisplay)
-
-      }else {
-        let val = this.state.currentDisplay + value;
-        alert(val);
-        this.setState({currentDisplay:val})
-      }
-    }
-
-    function handleDisplayValue(value){ /*Using The carousel you only nee dto return a value that is in range of the display array.*/      
-      if (value <= this.state.screens.length ){
-        return(value);
-      }
-    }
-
-    return (
+      return (
       <div className="row test2 h-100 flex-grow"> {/*Note that h-100 and flex-grow allows this div to fill all remaining space. Use this to display all main pages below the banner */}
         <div className='col'>
-          <div id = 'centerpanel' className='row'>
-            <div className='col-1'>
-              <SiteArrowsComponent ArrowValue = {this.state.leftArrow} onClick={() => handleArrowDisplayValueChange(this.state.leftArrow)}/>
-            </div>
-
-            <div className='col-10'>
-              <SiteCenterPanelComponent display = {this.state.screens[this.state.currentDisplay]}/>
-            </div>
-              
-            <div className='col-1'>
-              <SiteArrowsComponent ArrowValue= {this.state.rightArrow} onClick={() => this.setState({currentDisplay: checkDisplayedValue(this.state.rightArrow,this.state.currentDisplay)})}/>
-            </div>
-          </div>
-
-          <div id = 'carousel' className='row'>
-            <div className='col'>
-              <SiteCarouselComponent/>
-            </div>
-          </div>
+        {/**1)strip out the arrow and display components and just leave the header and the bottom display 
+        2) rig header to the different web pages
+        3) add these components to the different pages
+        4) connect router to manage moving between scenes*/}
+          {test[0]/*this.props.display*/}
         </div>
       </div>
     );

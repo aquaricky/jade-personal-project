@@ -1,0 +1,9 @@
+-App.js opens houses the banner and the screen (siteDisplay).
+-Based on what link is selected on teh banner (portfolio etc.) we fill the screen (siteDisplay component) with teh correct display
+-Each display resume,portfolio etc is managed by teh router 
+-in portfolio we do teh carousel functions
+
+
+Basically!!!!
+
+Complete each section/web page (ie, portfoli, resume etc) then rig the higher order functions like teh siteDisplay
