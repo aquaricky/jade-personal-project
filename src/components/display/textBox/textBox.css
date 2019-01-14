@@ -1,5 +1,11 @@
+.remove2{
+    background-color: beige;
+}
+
 .scroll{
     background-color: blue;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+    
+    

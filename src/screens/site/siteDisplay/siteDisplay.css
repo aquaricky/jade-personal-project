@@ -1,8 +1,4 @@
-#centerpanel{
-    height: 80%;
+.centerpanel{
+    height: 100%;
+    background-color: aquamarine;
 }
-
-#carousel{
-    height: 20%;
-}
-
