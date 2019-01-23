@@ -1,7 +1,9 @@
-.video {
-    background-color: aqua;
+.aboutText{
+    min-height: 80%;
+    max-height: 80%;
 }
 
-.text{
-    background-color: aquamarine;
+.mediaLinks{
+    min-height: 20%;
+    max-height: 20%;
 }

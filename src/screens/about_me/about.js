@@ -12,18 +12,12 @@ constructor(props){
   render() {
     return (
       <div className="row  h-100 flex-grow">
-        <div className="col-12"> 
-          <div className="row">
-            <p>
+        
+            <div className="col-11 aboutText">
               About Jade
-            </p>
-          </div> 
+            </div>
 
-          <div className="row">
-            <MediaLinksComponent></MediaLinksComponent>
-          </div>
-
-        </div>
+            <div className="col-1 mediaLinks"> <MediaLinksComponent></MediaLinksComponent> </div>
       </div>
     );
   }

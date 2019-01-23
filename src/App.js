@@ -9,7 +9,7 @@ import SiteDisplayComponent from './screens/site/siteDisplay/siteDisplay';
 class App extends Component {
   render() {
     return (
-      <div className="App container-fluid d-flex flex-column flex-grow">
+      <div className="App container-fluid">
         <SiteBannerComponent/>
         <SiteDisplayComponent/>
       </div>
