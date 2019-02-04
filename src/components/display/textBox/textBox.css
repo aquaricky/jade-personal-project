@@ -1,11 +1,4 @@
-.remove2{
-    background-color: beige;
+.buttonCleanup{
+padding:2px !important;
 }
-
-.scroll{
-    background-color: blue;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-    
     

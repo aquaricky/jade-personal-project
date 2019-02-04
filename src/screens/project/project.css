@@ -1,7 +1,6 @@
-.display{
-    height: 80%;
-}
-
-.banner{
-    height: 20%;
-}
+.custom-tag {
+  margin-top: 10vh;
+    max-width: 100%;
+    height: 50vh;
+    background-color: white;
+  }

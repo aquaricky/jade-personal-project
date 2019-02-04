@@ -1,21 +1,64 @@
 import React, { Component } from 'react';
 import './SiteBannerComponent.css';
-import SiteNavBarComponent from '../SiteNavBar/SiteNavBarComponent';
+import {NavLink,Link} from 'react-router-dom';
+import { Collapse,Navbar,NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { NavLink as Reactstraplink } from 'reactstrap';
 
 class SiteBannerComponent extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
   render() {
     return (
-      <div className='row banner'>
-        <div className='col-4'>
-          <h1>Test Banner</h1>
-        </div>
 
-        <div className='col-8'>
-          <SiteNavBarComponent/>
-        </div>
-      </div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand> <Link className="navbar-brand" to="/">Jade Miller</Link> </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+
+            <NavItem>
+              <NavLink className="nav-link" to="/">Home</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className="nav-link" to="/Resume">Resume</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className="nav-link" to="/ContactMe">Contact Me</NavLink>
+            </NavItem>
+
+            <NavItem>
+               <NavLink className="nav-link" to="/Projects">Projects</NavLink>
+            </NavItem>
+
+            <NavItem>
+              <Reactstraplink href="https://github.com/aquaricky"> GitHub </Reactstraplink>
+            </NavItem>
+
+          </Nav>
+        </Collapse>
+    </Navbar>
     );
   }
 }
 
 export default SiteBannerComponent;
+
+
+
+{/**Might have to remove entire page!! Apply the NAVBAR section of Bootstrap for this and remove all these extra grid options
+ */}

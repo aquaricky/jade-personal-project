@@ -1,29 +1,26 @@
 import React, { Component } from 'react';
 import './videoBox.css';
+import { Row, Col} from 'reactstrap';
 
 class VideoDisplayComponent extends Component {
 constructor(props){
   super(props);
   this.state={
-    url:null,
+    url:"https://www.youtube.com/embed/dCfOxU1uFK8",
   };
 }
 
   render() {
     let video;
 
-    if (this.state.url != null) {
-      video = <iframe width="100%" height="100%" src= {this.state.test} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
-    } else {
-      video = null;
-    }
+      video = <iframe width="100%" height="100%" src= {this.state.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
     
     return (
-      <div className="row remove1 h-100 flex-grow">
-        <div className="col-12">
+      <Row className="h-100">
+        <Col lg="12">
           {video}
-        </div>
-      </div>
+        </Col>
+      </Row>
     );
   }
 }

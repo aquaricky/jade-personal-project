@@ -9,8 +9,14 @@
   
   .unityicon{
     padding: 0px;
-    width: 100px;
-    display: inline-block;
+    max-height:64px;
+    max-width: 64px;
+  }
+
+  .Discordicon{
+    padding: 0px;
+    max-height:40px;
+    max-width: 40px;
   }
 
   /* Add a hover effect if you want */

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './mediaLinks.css';
+import { UncontrolledTooltip ,Container, Row, Col,Nav, NavItem, NavLink,ButtonGroup,Button } from 'reactstrap';
 
 class MediaLinksComponent extends Component {
 constructor(props){
@@ -10,96 +11,64 @@ constructor(props){
 
   render() {
     return (
-      <div className="row h-100">
+      <Container fluid="true">
+        <Row>
+          <Col>
+            <Nav vertical>
+              <NavItem>
+                <NavLink id="twitter" className="fa fa-twitter" href="https://twitter.com/Imposter_Syndr"></NavLink>
+                <UncontrolledTooltip placement="right" target="twitter">
+                  @Imposter_Syndr
+                </UncontrolledTooltip>
+              </NavItem>
 
-        <div className="col-12">
-          <div className="row">
-            <a className="fa fa-twitter" href="https://twitter.com/" title="Twitter"/>
-          </div>
+              <NavItem>
+                <NavLink className="fa fa-facebook" href="https://www.facebook.com/jade.t.miller"></NavLink>
+              </NavItem>
 
-          <div className="row">
-          <a className="fa fa-facebook" href="https://twitter.com/" title="Twitter"/>
-          </div>
-          
-          <div className="row">
-            <a className="fa fa-youtube-play" href="https://twitter.com/" title="Twitter"/>
-          </div>
+              <NavItem>
+                <NavLink className="fa fa-youtube-play" href="https://www.youtube.com/channel/UCs_sURValk3HJFBpme5t6tQ?view_as=subscriber"></NavLink>
+              </NavItem>
 
-          <div className="row">
-            <a className="fa" href="https://twitter.com/" title="Twitter"><img className="unityicon" src={require("../../../res/unity-master-black.png")}  title="UnityConnect" alt="UnityConnect"/> </a>
-          </div>
+              <NavItem>
+                <NavLink id="unityconnect" className="Discordicon" href="https://connect.unity.com/u/jade-a-miller"><img className="unityicon" src={require("../../../res/unity-master-black.png")}  title="UnityConnect" alt="UnityConnect"/></NavLink>
+                <UncontrolledTooltip placement="right" target="unityconnect">
+                  UnityConnect
+                </UncontrolledTooltip>
+              </NavItem>
 
-          <div className="row">
-            <a className="fa fa-linkedin " href="https://twitter.com/" title="Twitter"/>
-          </div>
+              <NavItem>
+                <NavLink className="fa fa-linkedin" href="https://www.linkedin.com/in/jade-miller-437997170/"></NavLink>
+                <UncontrolledTooltip placement="right" target="envelope">
+                  Jade.A.Miller93@gmail.com
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <NavLink id="github" className="fa fa-github-alt" href="https://github.com/aquaricky"></NavLink>
+                <UncontrolledTooltip placement="right" target="github">
+                  aquaricky
+                </UncontrolledTooltip>
+              </NavItem>
 
-          <div className="row">
-            <a className="fa fa-github-alt " href="https://twitter.com/" title="Twitter"/>
-          </div>
+              <NavItem>
+                <NavLink id="Discord" className="Discordicon" href="/"><img className="Discordicon" src={require("../../../res/Discord-Logo-Black.png")}  title="Discord" alt="Discord"/></NavLink>
+                <UncontrolledTooltip placement="right" target="Discord">
+                  Discord
+                </UncontrolledTooltip>
+              </NavItem>
 
-          <div className="row">
-            <a className="fa fa-envelope" href="https://twitter.com/" title="Twitter"/>
-          </div>
-        </div>
-        
-      </div>
+              <NavItem>
+                <NavLink id="envelope" className="fa fa-envelope" href="Jade.a.miller93@gmail.com"></NavLink>
+                <UncontrolledTooltip placement="right" target="envelope">
+                  Jade.A.Miller93@gmail.com
+                </UncontrolledTooltip>
+              </NavItem>
+            </Nav>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
 
 export default MediaLinksComponent;
-
-
-{/*<div className="col"></div>
-
-        <div className="col">
-          <div className="row">
-          <a className="iconsize fa-twitter" href="https://twitter.com/" title="Twitter"/>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="row">
-            <a className="iconsize fa-facebook" href="https://facebook.com/" title="Facebook"/>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="row">
-            <a href="https://youtube.com/" title="youtube">
-              <img className="iconsize" src={require("../../../res/yt_logo_rgb_light.png")}/>
-            </a>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="row">
-            <a href="https://unityconnect.com/" title="UnityConnect">
-              <img className="iconsize" src={require("../../../res/unity-master-black.png")}/>
-            </a>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="row">
-            <a href="https://linkedIn.com/" title="linkedin">
-              <img className="iconsize" src={require("../../../res/In-2C-128px-TM.png")}/>
-            </a>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="row">
-            <a href="https://github.com/" title="github">
-              <img className="iconsize" src={require("../../../res/Octocat.png")}/>
-            </a>
-          </div>
-        </div>
-
-        
-        <div className="col">
-          <div className="row">
-              <img className="iconsize" src={require("../../../res/logo_gmail_128px.png")}/>
-          </div>
-        </div>
-*/}

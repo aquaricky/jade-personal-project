@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card,CardBody,CardTitle,CardText,Button, Row, Col } from 'reactstrap';
 import './about.css';
 import MediaLinksComponent from '../../components/UI/siteMediaLinks/mediaLinks'
 
@@ -11,14 +12,19 @@ constructor(props){
 
   render() {
     return (
-      <div className="row  h-100 flex-grow">
-        
-            <div className="col-11 aboutText">
-              About Jade
-            </div>
+        <Row >
+          <Col lg='11'> 
+            <Card className="aboutText">
+              <CardBody body className="text-center">
+                <CardTitle>About Jade</CardTitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+          </Col>
 
-            <div className="col-1 mediaLinks"> <MediaLinksComponent></MediaLinksComponent> </div>
-      </div>
+          <Col lg='1'> <MediaLinksComponent/> </Col>
+        </Row>
     );
   }
 }
