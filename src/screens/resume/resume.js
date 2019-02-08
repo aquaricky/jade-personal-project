@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './resume.css';
 import { ListGroup,ListGroupItem,ListGroupItemHeading,ListGroupItemText,CardGroup,Card,CardBody,CardTitle, Row, Col } from 'reactstrap';
+import {resumeDownloadLinks} from "../../res/resumeLinks";
 
 class ResumeDisplayComponent extends Component {
 constructor(props){
@@ -11,18 +12,24 @@ constructor(props){
 
   render() {
     return (
-      <Row >
+      <Row>
         <Col lg='12'> 
         <Card className="Text">
           <CardBody body className="text-center">
-            <CardTitle><h1>Resume</h1></CardTitle>
+            <CardTitle>
+              <h1>Resume</h1>
+              <span className=""><b>Download: </b>
+                <a href={resumeDownloadLinks[0].link}>PDF </a> 
+                <a href={resumeDownloadLinks[1].link}>DOCX </a>
+              </span>
+            </CardTitle>
           </CardBody>
         </Card>
 
         <CardGroup>
-          <Card className="Text">
+          <Card className="Text border-right">
             <CardBody body className="text-left">
-              <CardTitle className="text-center"><h6>Work Experience</h6></CardTitle>
+              <CardTitle className="text-center"><h6><strong>Work Experience</strong></h6></CardTitle>
               <ListGroup flush>
                 <ListGroupItem >
                   <ListGroupItemHeading><h6>Aye-Tech (2 Trafalgar Road, Kingston 5 Jamaica )</h6></ListGroupItemHeading>
@@ -61,9 +68,9 @@ constructor(props){
             </CardBody>
           </Card>
 
-          <Card className="Text">
+          <Card className="Text border-right">
             <CardBody body className="text-left">
-              <CardTitle className="text-center"><h6>Education</h6></CardTitle>
+              <CardTitle className="text-center"><h6><strong>Education</strong></h6></CardTitle>
               <ListGroup flush>
                 <ListGroupItem>
                   <ListGroupItemText>
@@ -80,7 +87,7 @@ constructor(props){
 
           <Card className="Text">
             <CardBody body className="text-left">
-              <CardTitle className="text-center"><h6>Skills</h6></CardTitle>
+              <CardTitle className="text-center"><h6><strong>Skill summary</strong></h6></CardTitle>
 
               <ListGroup flush>
                 <ListGroupItem>
@@ -99,16 +106,22 @@ constructor(props){
 
               <ListGroup flush>
                 <ListGroupItem>
-                  <ListGroupItemHeading><h6>Soft Skills</h6></ListGroupItemHeading>
+                  <ListGroupItemHeading><h6>Skills</h6></ListGroupItemHeading>
                   
                   <ListGroupItemText>
                   <ul>
-                    <li>•	Experienced in object-oriented programming; debugging, interface design and Problem solving.
-                        •	Can quickly learn and  master new technologies; successful working in both team and self-directed settings.
-                    </li>
-                    <li>Exceptional communication skills
-                          Excellent active and reflective listening skills   
-                    </li>
+                    <li>A broad understanding of all areas of game design, gameplay and systems design</li>
+                    <li>Excellent skill in </li>
+                    <li>Excellent active and reflective listening skills</li>
+                    <li>Native English speaker</li>
+                    <li>Experienced in object-oriented programming; debugging, interface design and Problem solving.</li>
+                    <li>Can quickly learn and  master new technologies; successful working in both team and self-directed settings.</li>
+                    <li>Exceptional communication skills</li>
+                    {/**<li>Excellent design documentation skills</li>
+                    <li>Excellent rapid prototyping skills</li>
+                    <li>Exceptional communication skills</li>
+                    <li>Excellent understanding of team management (Agile / Scrum) and group dynamics</li>
+                    <li>Excellent pitching skills, both preparation and execution</li> */}
                   </ul>
                   </ListGroupItemText>
                 </ListGroupItem>

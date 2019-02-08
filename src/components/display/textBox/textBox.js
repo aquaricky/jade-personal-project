@@ -6,38 +6,43 @@ class TextDisplayComponent extends Component {
 constructor(props){
   super(props);
   this.state={
-    projectTitle:null,
-    buttonList:[],
-    text:null,
-    responsibilities:[]
   };
 }
 
+renderButtons(buttonProps){
+  let buttonWheel=[];
+  for(let i=0; i<buttonProps.length; i++){
+    buttonWheel.push( <Button key={buttonProps[i].id} className="buttonCleanup" color={buttonProps[i].buttonColor} >{buttonProps[i].buttonText}</Button>);
+  }
+  return buttonWheel;
+}
+
+renderList(ListProps){
+  let List=[];
+
+  for (let i=0; i<ListProps.length ; i++){
+    List.push(<li key={ListProps[i].id}><b>{ListProps[i].text}</b></li>)
+  }
+
+  return List;
+}
+
   render() {
-
-    let responsibilities;
-    let description;
-    let buttonList;
-    let projectTitle;
-
     return (
       <Row className="h-100">
         <Col>
-          <Card className="Text" className="text-left h-100">
-            <CardBody body className="h-100">
-              <CardTitle><h5>Project Title (2019)</h5></CardTitle>
-              <CardSubtitle> <Button className="buttonCleanup">Button</Button> <Button className="buttonCleanup">Button</Button></CardSubtitle>
+          <Card body className="Text" className="text-left h-100">
+            <CardBody  className="h-100">
+              <CardTitle><h5>{this.props.projectTitle}</h5></CardTitle>
+              <CardSubtitle> {this.renderButtons(this.props.button)} </CardSubtitle>
               <br></br>
-              <CardText> Project Description dfasdilufsafua aiufdsau saidfusda sdaiuf sisda siauf saduf saiuf saiufsdifsadluf asifluashdifugsda sailsdufasd iuaiuda isdfisduf  sa</CardText>
+              <CardText> {this.props.projectDescText}</CardText>
               <CardText>
                 <ul>
-                  <li><b>Platforms:</b></li>
-                  <li><b>Languages</b></li>
-                  <li><b>RDBMS:</b></li>
-                  <li><b>Tools:</b></li>
+                  {this.renderList(this.props.List)}
                 </ul>
               </CardText>
-              <CardLink href="#">Download</CardLink>
+              <CardLink href={this.props.downloadURL}>Download</CardLink>
             </CardBody>
           </Card>
         </Col>

@@ -5,6 +5,7 @@
     width: 30px;
     text-align: center;
     text-decoration: none;
+    color:black;
   }
   
   .unityicon{
@@ -22,6 +23,7 @@
   /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
+    color:blue;
   }
   
   /* Set a specific color for each brand */

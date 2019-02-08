@@ -16,7 +16,7 @@ class SiteDisplayComponent extends Component {
             <Route exact path="/" component = {AboutDisplayComponent}/> {/**Turn About into a more comprehensive marketing page */}
             <Route exact path="/Resume" component = {ResumeDisplayComponent}/>
             <Route exact path="/ContactMe" component = {ContactDisplayComponent}/> 
-            <Route exact path="/Projects" component = {ProjectDisplayComponent}/>
+            <Route disable exact path="/Projects" component = {ProjectDisplayComponent}/>
           </Switch>
         </Col>
       </Row>

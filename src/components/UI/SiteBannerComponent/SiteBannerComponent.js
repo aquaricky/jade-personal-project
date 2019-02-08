@@ -24,7 +24,7 @@ class SiteBannerComponent extends Component {
     return (
 
       <Navbar color="light" light expand="md">
-        <NavbarBrand> <Link className="navbar-brand" to="/">Jade Miller</Link> </NavbarBrand>
+        <NavbarBrand> <Link className="navbar-brand" to="/"><h3>Jade Miller</h3></Link> </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>

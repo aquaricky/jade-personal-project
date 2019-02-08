@@ -2,24 +2,9 @@ import React, { Component } from 'react';
 import './project.css';
 import { Row, Col,Carousel,CarouselItem,  CarouselControl,  CarouselIndicators, CarouselCaption } from 'reactstrap';
 import SlideDisplayComponent from '../../components/display/slideComponent/slideComponent';
+import {slideArray} from '../../res/projectSlideArray'
 
-const items = [
-  {
-    id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
-  },
-  {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
-];
+const items = slideArray;
 
 
 class AboutDisplayComponent extends Component {
@@ -72,8 +57,7 @@ class AboutDisplayComponent extends Component {
           onExited={this.onExited}
         >
         {/**CHANGE THE CLASSNAME up to adjust video player height */}
-          <SlideDisplayComponent></SlideDisplayComponent>
-        <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
+          <SlideDisplayComponent slide={item.slide}></SlideDisplayComponent>
         </CarouselItem>
       );
     });
