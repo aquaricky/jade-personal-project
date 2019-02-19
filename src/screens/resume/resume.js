@@ -19,8 +19,8 @@ constructor(props){
             <CardTitle>
               <h1>Resume</h1>
               <span className=""><b>Download: </b>
-                <a href={resumeDownloadLinks[0].link}>PDF </a> 
-                <a href={resumeDownloadLinks[1].link}>DOCX </a>
+                <a href={resumeDownloadLinks[0].link} target="_blank">PDF </a> 
+                <a href={resumeDownloadLinks[1].link} target="_blank">DOCX </a>
               </span>
             </CardTitle>
           </CardBody>
@@ -30,19 +30,20 @@ constructor(props){
           <Card className="Text border-right">
             <CardBody body className="text-left">
               <CardTitle className="text-center"><h6><strong>Work Experience</strong></h6></CardTitle>
+
               <ListGroup flush>
                 <ListGroupItem >
-                  <ListGroupItemHeading><h6>Aye-Tech (2 Trafalgar Road, Kingston 5 Jamaica )</h6></ListGroupItemHeading>
+                  <ListGroupItemHeading><h6>Digicel group (The Digicel Building 14 Ocean Boulevard ,Kingston, Jamaica)</h6></ListGroupItemHeading>
                   <ListGroupItemText>
-                    (July 2015 – current) Implementation Consultant 
+                    Senior Group Carrier Billing Executive  (Feb 2018 – current)
                     Responsibilities:
                     <ul>
-                      <li>Test, deploy and maintain Aye Technologies’ AyeLAB Laboratory Information System (LIS) in both Windows and Linux environments. </li>
-                      <li>Presenting ideas for system improvements</li>
-                      <li>Plan and execute user training exercises</li> 
-                      <li>systems Maintainance</li> 
-                      <li>Perform Quality Assurance tests on newly implemented features</li>
-                      <li>Preparation of Technical Documents</li>
+                      <li>Generate timely and accurate billing reports for each billing period </li>
+                      <li>Manage and communicate mediation requirements for new carriers, trunks, products and services.</li>
+                      <li>Support the carrier invoice reconciliation and dispute resolution process.</li> 
+                      <li>Project Manage InterconnecT Billing, BriteAccount, Reporting & Optimized Routing systems upgrades and enhancements.</li> 
+                      <li>Perform call and system testing after all system patches and upgrades</li>
+                      <li>Manage the interconnect system reference data archive policy</li>
                     </ul>
                   </ListGroupItemText>
                 </ListGroupItem>
@@ -50,9 +51,26 @@ constructor(props){
 
               <ListGroup flush>
                 <ListGroupItem >
-                  <ListGroupItemHeading><h6>Aye-Tech (2 Trafalgar Road, Kingston 5 Jamaica )</h6></ListGroupItemHeading>
+                  <ListGroupItemHeading><h6>Digicel group (The Digicel Building 14 Ocean Boulevard ,Kingston, Jamaica)</h6></ListGroupItemHeading>
                   <ListGroupItemText>
-                    (July 2015 – current) Implementation Consultant 
+                    Billing Support Executive  (Feb 2017 – Feb 2018) 
+                    Responsibilities:
+                    <ul>
+                      <li> Manage the dispute resolution process with International carriers</li>
+                      <li>Ensure that CDRs are priced correctly</li>
+                      <li>Maintain business relation between Digicel and all International, regional and domestic carriers</li>
+                      <li>Liaise with and provide support for the wholesale settlement process.</li>
+                      <li> Manage various internal reconciliation processes to increase Revenue Assurance</li>
+                    </ul>
+                  </ListGroupItemText>
+                </ListGroupItem>
+              </ListGroup>
+
+              <ListGroup flush>
+                <ListGroupItem >
+                  <ListGroupItemHeading><h6>Aye - Tech (8 1/2 Worthington Terr. , Kingston 5 Jamaica )</h6></ListGroupItemHeading>
+                  <ListGroupItemText>
+                    Implementation Consultant/ Jr. Programmer  (July 2015 – Feb 2017)
                     Responsibilities:
                     <ul>
                       <li>Test, deploy and maintain Aye Technologies’ AyeLAB Laboratory Information System (LIS) in both Windows and Linux environments. </li>
@@ -95,10 +113,10 @@ constructor(props){
                   
                   <ListGroupItemText>
                   <ul>
-                    <li><b>Platforms:</b> NT Xp/Vista/8/10, Windows Server 2003/2008, Linux</li>
-                    <li><b>Languages</b>: Java 2, HTML 5, CSS 3, JavaScript, NT BAT Scripts, Python, C# </li>
-                    <li><b>RDBMS:</b>  PostgreSQL, MSSQL</li>
-                    <li><b>Tools:</b> Microsoft Office Suite, Adobe Photoshop, GIT, Razor DB, PGadmin 3, Crystal Reports, Ecrion Reports, Unity 3D, Maven</li>
+                    <li><b>Platforms:</b>NT Xp/Vista/8/10, Windows Server 2003/2008, Linux</li>
+                    <li><b>Languages:</b>Java , HTML 5, CSS 3, JavaScript, NT BAT Scripts, C#, React Js, Node Js </li>
+                    <li><b>RDBMS:</b>PostgreSQL, MSSQL, Oracle 11g</li>
+                    <li><b>Tools:</b>Microsoft Office Suite, GIT, Razor DB, PGadmin 3, Crystal Reports, Ecrion Reports, Unity 3D, Maven, Microsoft Power BI, Pentaho Data Integration,Trello </li>
                   </ul>
                   </ListGroupItemText>
                 </ListGroupItem>
@@ -106,22 +124,15 @@ constructor(props){
 
               <ListGroup flush>
                 <ListGroupItem>
-                  <ListGroupItemHeading><h6>Skills</h6></ListGroupItemHeading>
+                  <ListGroupItemHeading><h6>Soft Skills</h6></ListGroupItemHeading>
                   
                   <ListGroupItemText>
                   <ul>
                     <li>A broad understanding of all areas of game design, gameplay and systems design</li>
-                    <li>Excellent skill in </li>
-                    <li>Excellent active and reflective listening skills</li>
                     <li>Native English speaker</li>
-                    <li>Experienced in object-oriented programming; debugging, interface design and Problem solving.</li>
+                    <li>Experienced in object-oriented programming, debugging, interface design and Problem solving.</li>
                     <li>Can quickly learn and  master new technologies; successful working in both team and self-directed settings.</li>
                     <li>Exceptional communication skills</li>
-                    {/**<li>Excellent design documentation skills</li>
-                    <li>Excellent rapid prototyping skills</li>
-                    <li>Exceptional communication skills</li>
-                    <li>Excellent understanding of team management (Agile / Scrum) and group dynamics</li>
-                    <li>Excellent pitching skills, both preparation and execution</li> */}
                   </ul>
                   </ListGroupItemText>
                 </ListGroupItem>

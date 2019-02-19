@@ -46,7 +46,7 @@ class SiteBannerComponent extends Component {
             </NavItem>
 
             <NavItem>
-              <Reactstraplink href="https://github.com/aquaricky"> GitHub </Reactstraplink>
+              <Reactstraplink target="_blank" href="https://github.com/aquaricky"> GitHub </Reactstraplink>
             </NavItem>
 
           </Nav>

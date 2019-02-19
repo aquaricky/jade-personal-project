@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Row, Col } from 'reactstrap';
+import {withFormik} from 'formik'
+import yup from 'yup'
 import './contact.css';
 
 class ContactDisplayComponent extends Component {
@@ -13,6 +15,7 @@ constructor(props){
     return (
         <Row>
           <Col lg='12'>
+          
           </Col>
         </Row>
     );

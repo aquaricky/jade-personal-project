@@ -42,7 +42,7 @@ renderList(ListProps){
                   {this.renderList(this.props.List)}
                 </ul>
               </CardText>
-              <CardLink href={this.props.downloadURL}>Download</CardLink>
+              <CardLink href={this.props.downloadURL} target="_blank">Download</CardLink>
             </CardBody>
           </Card>
         </Col>

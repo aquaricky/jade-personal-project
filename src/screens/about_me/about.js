@@ -18,8 +18,13 @@ constructor(props){
             <CardBody body className="text-center">
               <CardTitle><h1 className="display-4"> <strong> Game Designer And Programmer </strong> </h1></CardTitle>
               <CardText className="lead">
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5>Want to get in touch? Check the media Links -></h5>
+                <p>Hi my name is Jade Miller and I have a passion for understanding the game mechanics that have defined our lives for years. 
+                With a background in programming I strive to bring  these odd mechanics that govern real life to as much virtual worlds as possible. 
+                What fuels my interest in game design is the potential that each improvement in technology has to consume life as we know it, constantly blurring the line between real and fake.
+                This allows game designers to shift the designs they use to shape player choice and behaviors to a new landscape, Influencing human behavior in new unforeseen ways.
+                I think God made the first RPG, I'm just here to add the mods :D
+                </p>
+                <h5>Want to get in touch? Send me an email at <strong>Jade.a.miller93 [at] gmail.com</strong></h5>
               </CardText>
             </CardBody>
           </Card>
