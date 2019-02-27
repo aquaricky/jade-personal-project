@@ -37,13 +37,13 @@ class SiteBannerComponent extends Component {
               <NavLink className="nav-link" to="/Resume">Resume</NavLink>
             </NavItem>
 
-            <NavItem>
+            {/*<NavItem>
               <NavLink className="nav-link" to="/ContactMe">Contact Me</NavLink>
             </NavItem>
 
             <NavItem>
                <NavLink className="nav-link" to="/Projects">Projects</NavLink>
-            </NavItem>
+            </NavItem>*/}
 
             <NavItem>
               <Reactstraplink target="_blank" href="https://github.com/aquaricky"> GitHub </Reactstraplink>
