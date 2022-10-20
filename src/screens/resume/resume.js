@@ -35,7 +35,21 @@ constructor(props){
                 <ListGroupItem >
                   <ListGroupItemHeading><h6>Digicel group (The Digicel Building 14 Ocean Boulevard ,Kingston, Jamaica)</h6></ListGroupItemHeading>
                   <ListGroupItemText>
-                    Senior Group Carrier Billing Executive  (Feb 2018 – current)
+                    Roaming Billing Manager  (Jan 2020 – current)
+                    Responsibilities:
+                    <ul>
+                      <li>Manage the activities of staff in the Roaming billing function. </li>
+                      <li>Development of policies and procedures that ensure timely and accurate invoicing for both wholesale and retail billing</li>
+                    </ul>
+                  </ListGroupItemText>
+                </ListGroupItem>
+              </ListGroup>
+
+              <ListGroup flush>
+                <ListGroupItem >
+                  <ListGroupItemHeading><h6>Digicel group (The Digicel Building 14 Ocean Boulevard ,Kingston, Jamaica)</h6></ListGroupItemHeading>
+                  <ListGroupItemText>
+                    Senior Group Carrier Billing Executive  (Feb 2018 – Jan 2020)
                     Responsibilities:
                     <ul>
                       <li>Generate timely and accurate billing reports for each billing period </li>
@@ -106,6 +120,20 @@ constructor(props){
           <Card className="Text">
             <CardBody body className="text-left">
               <CardTitle className="text-center"><h6><strong>Skill summary</strong></h6></CardTitle>
+
+              <ListGroup flush>
+                <ListGroupItem>
+                  <ListGroupItemHeading><h6>Certifications</h6></ListGroupItemHeading>
+                  
+                  <ListGroupItemText>
+                  <ul>
+                    <li>
+                      <a target="_blank" href="https://www.credly.com/badges/31b82437-7f49-400e-adcb-e0a91d5d42e5/public_url"><b>Google Data Analytics Certificate</b> - Coursera</a>
+                    </li>
+                  </ul>
+                  </ListGroupItemText>
+                </ListGroupItem>
+              </ListGroup>
 
               <ListGroup flush>
                 <ListGroupItem>

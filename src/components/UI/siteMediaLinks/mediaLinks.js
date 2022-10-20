@@ -22,13 +22,13 @@ constructor(props){
                 </UncontrolledTooltip>
               </NavItem>
 
-              <NavItem>
+              {/*<NavItem>
                 <NavLink className="fa fa-facebook" target="_blank" href="https://www.facebook.com/jade.t.miller"></NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink className="fa fa-youtube-play" target="_blank" href="https://www.youtube.com/channel/UCs_sURValk3HJFBpme5t6tQ?view_as=subscriber"></NavLink>
-              </NavItem>
+    </NavItem>*/}
 
               <NavItem>
                 <NavLink id="unityconnect" target="_blank" href="https://connect.unity.com/u/jade-a-miller"><img className="unityicon" src={require("../../../res/unity-master-black.png")}  title="UnityConnect" alt="UnityConnect"/></NavLink>
