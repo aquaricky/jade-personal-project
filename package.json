@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^5.3.3",
     "formik": "^2.2.9",
     "material-design-icons": "^3.0.1",
     "material-icons-react": "^1.0.4",
